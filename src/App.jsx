@@ -2,6 +2,7 @@ import React, { useEffect, useState }  from 'react';
 import Clock from 'react-clock';
 import moment from "moment";
 import { BrowserRouter as Router, Routes, Route, useParams, Link } from "react-router-dom";
+import 'animate.css';
 
 
 
@@ -64,7 +65,7 @@ function Time() {
               ))}
           </div>
        </div>
-       <div className='bg-white flex items-center flex flex-col p-16 mt-9 rounded-lg'>
+       <div className='bg-white flex items-center flex flex-col p-16 mt-9 rounded-lg animate__animated animate__backInUp'>
        <div className='flex flex-row text-5xl mt-3'>
        <h1 className=''>{data.location.country}</h1>
        <h1 className=''>,</h1>
