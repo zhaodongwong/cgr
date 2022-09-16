@@ -55,7 +55,7 @@ function Time() {
          <input value={query} onChange={(e) => setQuery(e.target.value)} type="text" placeholder="Type to search" className='flex-1 p-2 pr-80 border-zinc-200 border-2 placeholder-zinc-300 pb-2 text-2xl bg-black focus:bg-white rounded-full'/>
          <div className=" w-[calc(100%-3rem)] flex flex-col bg-black text-white rounded-b-md divide-y shadow-lg bg-black border-white border-1">
             {query && !results.length
-              ? "No results"
+              ? ""
               : results.map((result) => (
                 <Link className="py-3 px-4 text-xl " to={`/${result.url}`}>
                   {[result.country, result.region, result.name]
