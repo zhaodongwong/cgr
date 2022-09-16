@@ -52,7 +52,7 @@ function Time() {
        <h1 className="mt-8 text-white text-2xl lg:text-5xl">Malaysia , GMT+8</h1>
        <div className='line w-full mt-3'></div>
        <div className='mt-5 flex items-center flex flex-col'>
-         <input value={query} onChange={(e) => setQuery(e.target.value)} type="text" placeholder="Type to search" className='flex-1 p-2 pr-40 border-zinc-200 border-2 placeholder-zinc-300 pb-2 text-lg lg:text-2xl bg-black focus:bg-white rounded-full'/>
+         <input value={query} onChange={(e) => setQuery(e.target.value)} type="text" placeholder="Type to search" className='flex-1 p-2 pr-20 lg:pr-40 border-zinc-200 border-2 placeholder-zinc-300 pb-2 text-lg lg:text-2xl bg-black focus:bg-white rounded-full'/>
          <div className=" w-[calc(100%-3rem)] flex flex-col bg-black text-white rounded-b-md divide-y shadow-lg bg-black border-white border-1">
             {query && !results.length
               ? ""
